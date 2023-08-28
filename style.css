@@ -250,6 +250,12 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 576px) {
+    .moment{
+        flex-direction: column;
+    }
+    .img img{
+        width: 300px;
+    }
     .plan-area{
         margin: 0px 0px;
     }
