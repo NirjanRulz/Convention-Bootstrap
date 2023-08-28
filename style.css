@@ -1,35 +1,44 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.navbar-nav{
+body {
+    display: block;
+    justify-content: center;
+}
+
+.navbar-nav {
     margin-right: 156px;
     margin-left: auto;
 }
-.navbar-brand{
+
+.navbar-brand {
     margin-left: 156px;
     color: #3E3E3E;
     font-size: 22px;
     font-weight: 700;
 }
-.nav-link{
-     color: #3E3E3E;
+
+.nav-link {
+    color: #3E3E3E;
     font-size: 16px;
     font-weight: 500;
 }
-.carousel-caption h2{
+
+.carousel-caption h2 {
     color: #FFF;
     font-size: 48px;
     font-weight: 600;
 }
-.carousel-caption p{
+
+.carousel-caption p {
     color: #FFF;
     font-size: 16px;
     font-weight: 300;
 }
-.carousel-caption button{
+
+.carousel-caption button {
     color: #3F87F5;
     font-size: 16px;
     font-weight: 700;
@@ -38,9 +47,228 @@
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
 }
-.carousel-caption button:hover{
+
+.carousel-caption button:hover {
     color: #FFF;
-    background: #3F87F5; 
+    background: #3F87F5;
     border-radius: 0px;
     transform: rotate(360deg);
 }
+
+.moment {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin: 100px 156px 0px;
+}
+
+.img img {
+    width: 546px;
+    height: 364px;
+}
+
+.main-text h2 {
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.main-text p {
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.explore-btn {
+    color: #FFF;
+    background: #3F87F5;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.explore-btn:hover {
+    color: #3F87F5;
+    background-color: #FFF;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.package h2 {
+    text-align: center;
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 100px 100px;
+}
+
+.client h2 {
+    text-align: center;
+    color: #0A0826;
+    font-size: 38px;
+    font-weight: 600;
+    margin: 100px 100px;
+}
+
+.faq h2 {
+    text-align: center;
+    color: #222221;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 100px 100px;
+
+}
+
+.plan-area {
+    margin: 0px 130px;
+}
+
+.card {
+    overflow: hidden;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.13);
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.8);
+}
+
+.card:hover {
+    border-radius: 25px;
+    background: #3F87F5;
+    color: #FFF;
+    transform: scale(1);
+}
+
+.card-price {
+    color: #231D4F;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.card-title {
+    color: #231D4F;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #848199;
+    font-size: 15px;
+}
+
+.card-list li {
+    list-style: none;
+    color: #848199;
+    font-size: 15px;
+}
+
+.card-list li i {
+    margin-right: 10px;
+    color: #5243C2;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.card-footer button {
+    color: #3F87F5;
+    background: #eccee2;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 13px 60px;
+    border: none;
+    border-radius: 24px;
+}
+
+.feedback-area {
+    margin: 0px 110px;
+}
+
+.client-card {
+    text-align: center;
+}
+
+.client-card p {
+    padding: 21px 54px 0px 54px;
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+.client-card img {
+    width: 100px;
+    height: 100px;
+}
+
+/* .card-footer button:hover{
+    background: #FFF;
+    color: #3F87F5;
+} */
+
+.FAQ{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+}
+.accrodion-FAQ{
+    width: 700px;
+    height: 400;
+}
+
+.accordion-header button{
+    color: #383838;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer{
+    background: var(--default-black, #0B0D17);
+    height: 280px;
+    padding-top: 85px;
+}
+.footer-item{
+    display: flex;
+    gap: 751px;
+    align-items: center;
+    justify-content: center;
+}
+.svg{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+}
+.footer-icon p{
+    color: var(--text-gray-300, #D9DBE1);
+}
+.footer-text{
+    color: var(--text-gray-300, #D9DBE1);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+    .plan-area{
+        margin: 0px 0px;
+    }
+    .feedback-area{
+        margin: 0px;
+    }
+    .FAQ{
+        flex-direction: column;
+    }
+    .img-FAQ img{
+        width: 700px;
+    }
+    .footer-item{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .footer{
+        width: 600px;
+    }
+    
+}
+
